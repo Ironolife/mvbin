@@ -1,26 +1,76 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+	background-color: black;
+	color: lime;
+	font-family: monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+html, body, #__next {
+	height: 100%;
+	margin: 0;
+}
+
+#__next {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main {
+	height: 100%;
+	width: 512px;
+	max-width: 100%;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	box-sizing: border-box;
+}
+
+header {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+.actions {
+	display: flex;
+	gap: 16px;
+	font-size: 1.2rem;
+}
+
+button {
+	padding: 0;
+	border: none;
+	font-size: 1.2rem;
+	text-decoration: underline;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.delete-button {
+	color: orange;
+}
+
+textarea {
+	flex: 1 0 auto;
+	padding: 16px;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.05);
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	resize: none;
+}
+
+footer {
+	flex-shrink: 0;
+	font-size: 1.2rem;
 }
