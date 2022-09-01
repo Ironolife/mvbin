@@ -24,6 +24,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<Head>
 					<title>MVBIN</title>
 					<meta name='description' content='Minimum Viable Pastebin' />
+					<meta
+						name='viewport'
+						content='width=device-width, initial-scale=1.0, maximum-scale=1'
+					/>
 					<link rel='icon' href='/favicon.ico' />
 				</Head>
 				<main>
